@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	
-	"net/http"
+	"net/http" //http connection package
 	"net/http/httptest" //for http end point test
 	"net/url"
 	"strconv"
