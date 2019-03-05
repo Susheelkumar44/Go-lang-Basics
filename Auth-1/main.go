@@ -66,7 +66,7 @@ func main() {
  
         email = r.FormValue("email")  // Data from the form
         pwd = r.FormValue("password") // Data from the form
- 
+ //Testing
         // Empty data checking
         emailCheck := helper.IsEmpty(email)
         pwdCheck := helper.IsEmpty(pwd)
