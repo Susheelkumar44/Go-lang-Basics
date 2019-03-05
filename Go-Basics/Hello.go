@@ -1,5 +1,5 @@
 package main
-import "fmt"
+import "fmt" //used for printing and scanning
 func main() {
 	i:=1
 	fmt.Println("Start")
