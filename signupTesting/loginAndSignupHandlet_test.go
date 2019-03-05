@@ -11,40 +11,7 @@ import (
 	"fmt"
 )
 
-/*func TestGetLoginHandler(t *testing.T){
-	mockStore := InitMockStore()
-	mockStore.On("Login").Return(Users{"chetajai","chethan@gmail.com","12345"},nil).Once()
-	req, err := http.NewRequest("POST", "", nil)
 
-	if err != nil {
-		t.Fatal(err)
-	}
-	recorder := httptest.NewRecorder()
-
-	hf := http.HandlerFunc(loginhandler)
-	hf.ServeHTTP(recorder, req)
-
-	if status := recorder.Code; status != http.StatusOK {
-		t.Errorf("handler returned wrong status code: got %v want %v",
-			status, http.StatusOK)
-	}
-	expected := Users{"chetajai","chethan@gmail.com","12345"}
-	u := []Users{}
-	err = json.NewDecoder(recorder.Body).Decode(&u)
-
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	actual := u[0]
-
-	if actual != expected {
-		t.Errorf("handler returned unexpected body: got %v want %v", actual, expected)
-	}
-
-	// the expectations that we defined in the `On` method are asserted here
-	mockStore.AssertExpectations(t)
-}*/
 
 func TestSignUphandler(t *testing.T) {
 
