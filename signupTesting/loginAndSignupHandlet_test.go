@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"strconv"
 	"testing"
-	"fmt"
+	
 )
 
 
@@ -25,7 +25,7 @@ func TestSignUphandler(t *testing.T) {
 	req.Header.Add("Content-Length", strconv.Itoa(len(form.Encode())))
 	if err != nil {
 		t.Fatal(err)
-		fmt.Println("error")
+		
 	}
 	recorder := httptest.NewRecorder()
 	hf := http.HandlerFunc(signuphandler)
