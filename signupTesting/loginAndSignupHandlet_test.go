@@ -18,7 +18,7 @@ func TestSignUphandler(t *testing.T) {
 	mockStore := InitMockStore()
 	
 	mockStore.On("Signup", &Users{"chetajai", "chethan@gmail.com",""}).Return(nil)
-	fmt.Println("111111")
+	
 	form := newSignUpForm() 
 	req, err := http.NewRequest("POST", " ", bytes.NewBufferString(form.Encode()))
 	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
