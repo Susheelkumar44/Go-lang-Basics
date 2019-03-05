@@ -2,7 +2,7 @@ package main
 
 import (
 	"bytes"
-	"encoding/json"
+	//"encoding/json"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
@@ -11,7 +11,7 @@ import (
 	"fmt"
 )
 
-func TestGetLoginHandler(t *testing.T){
+/*func TestGetLoginHandler(t *testing.T){
 	mockStore := InitMockStore()
 	mockStore.On("Login").Return(Users{"chetajai","chethan@gmail.com","12345"},nil).Once()
 	req, err := http.NewRequest("POST", "", nil)
@@ -44,7 +44,7 @@ func TestGetLoginHandler(t *testing.T){
 
 	// the expectations that we defined in the `On` method are asserted here
 	mockStore.AssertExpectations(t)
-}
+}*/
 
 func TestSignUphandler(t *testing.T) {
 
