@@ -11,6 +11,7 @@ import (
     "crypto/sha512"
 	"encoding/base64"
 	//mydb "Auth-1/mydb"
+	//no package
     _ "github.com/lib/pq"
     helper "Auth-1/helpers"
     "github.com/dgrijalva/jwt-go"
