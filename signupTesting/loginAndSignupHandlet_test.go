@@ -7,7 +7,7 @@ import (
 	"net/http/httptest" //for http end point test
 	"net/url"
 	"strconv" //string convertor
-	"testing"
+	"testing" //Go lang testing package
 	"fmt"
 )
 
